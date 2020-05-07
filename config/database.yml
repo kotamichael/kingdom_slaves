@@ -32,9 +32,4 @@ test:
   socket: /tmp/mysql.sock
 
 production:
-  adapter: mysql2
-  database: kingdom_slaves
-  username: root
-  password: Strokerb3
-  host: localhost
-  socket: /tmp/mysql.sock
+  url: <%= ENV['DATABASE_URL'] %>
